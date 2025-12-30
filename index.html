@@ -24,28 +24,24 @@
     body {
       font-family: 'Poppins', sans-serif;
       color: var(--text-main);
-      /* 修改：字体设为标准大小，不再巨大化 */
       font-size: 1rem; 
       line-height: 1.7;
     }
 
-    /* 核心修改：统一限制页面主容器的宽度，让两边缩进来 */
     .container.is-max-desktop {
-      max-width: 960px !important; /* 强制最大宽度，让内容聚拢 */
+      max-width: 960px !important; 
     }
 
     /* --- Typography --- */
     h1, h2, h3 { color: #000; }
 
     .hero-title {
-      /* 修改：标题调小 */
       font-size: 2.5rem; 
       font-weight: 700;
       line-height: 1.2;
     }
     
     .hero-subtitle {
-      /* 修改：副标题调小 */
       font-size: 1.2rem;
       color: #4a4a4a;
       margin-top: 1rem;
@@ -59,7 +55,7 @@
     
     .section-title h2 {
       color: var(--primary-color);
-      font-size: 2rem; /* 调小 */
+      font-size: 2rem; 
       font-weight: 600;
       position: relative;
       display: inline-block;
@@ -83,7 +79,7 @@
     /* --- Sections --- */
     .hero { 
       background-color: var(--bg-light); 
-      padding: 4rem 1.5rem; /* 稍微减少高度 */
+      padding: 4rem 1.5rem; 
     }
     .content-section { padding: 3rem 0; }
 
@@ -92,7 +88,6 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
       border-radius: 8px;
       overflow: hidden;
-      /* 表格字体稍微小一点点，防止链接换行太难看 */
       font-size: 0.9rem; 
     }
     .table thead th {
@@ -104,7 +99,6 @@
       color: var(--primary-color);
       font-weight: 500;
       text-decoration: none;
-      /* 增加文字换行处理，防止表格撑破容器 */
       word-break: break-all; 
     }
     .table a:hover {
@@ -120,14 +114,14 @@
     .result-card {
       background: #fff;
       border-radius: 12px;
-      padding: 2rem; /* 减少内边距 */
+      padding: 2rem;
       margin-bottom: 2.5rem; 
       box-shadow: 0 4px 20px rgba(0,0,0,0.06);
       border: 1px solid #eaeaea;
     }
 
     .result-header {
-      font-size: 1.4rem; /* 调小 */
+      font-size: 1.4rem;
       color: var(--primary-color);
       font-weight: 700;
       margin-bottom: 1.2rem;
@@ -149,7 +143,6 @@
       display: block;
     }
     
-    /* 调整Caption样式：稍微小一点，不那么像标题 */
     .img-caption-tag {
       background: #f1f1f1;
       color: #333; 
@@ -236,7 +229,6 @@
       </div>
 
       <div class="table-container">
-        <!-- 保持原文所有链接文字 -->
         <table class="table is-fullwidth is-hoverable is-striped">
           <thead>
             <tr>
@@ -305,7 +297,6 @@
         <ul>
           <li><strong>CLIP Pre-trained Model</strong>: Fine-tuning a pre-trained CLIP model to evaluate direct performance degradation under noisy conditions.</li>
           <li><strong>NPC (Noise Pre-training and Class-wise fine-tuning)</strong>: Pre-training on noisy datasets followed by class-wise fine-tuning to assess robustness.</li>
-          <li><strong>GLP (Gradient-based Label Propagation)</strong>: Applying gradient-based label propagation to mitigate the effects of incorrect semantic alignments.</li>
         </ul>
       </div>
     </div>
@@ -313,7 +304,6 @@
 
   <!-- Results Analysis Section -->
   <section class="content-section result-section-wrapper">
-    <!-- 修改：使用 is-max-desktop 代替 is-max-widescreen，这样内容宽度就和上面对齐了，两边会缩小 -->
     <div class="container is-max-desktop">
       <div class="section-title">
         <h2>Results Analysis</h2>

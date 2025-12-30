@@ -218,10 +218,10 @@
           The dataset directory contains folders for each type of noise applied to the MS-COCO and Flickr30K datasets. The noise types include:
         </p>
         <ul>
-          <li><strong>Entity Referential Error</strong>: Incorrect references to entities in captions.</li>
-          <li><strong>High-level Semantic Confusion</strong>: Confusing high-level semantics in captions.</li>
-          <li><strong>Object Omission</strong>: Important objects omitted from captions.</li>
-          <li><strong>Short Description</strong>: Incomplete or overly brief captions.</li>
+          <li><strong>Entity Referential Error (ER)</strong>: Specific entities in the captions are replaced with semantically related but incorrect terms, creating fine-grained mismatches.</li>
+          <li><strong>High-Level Semantic Confusion (SC)</strong>: Captions are swapped from semantically proximate images in feature space.</li>
+          <li><strong>Object Omission (OO)</strong>: Captions describe the scene but omit some objects, simulating incomplete annotation.</li>
+          <li><strong>Short Description (SD)</strong>: Captions are condensed to generic statements, mimicking low-effort annotations.</li>
         </ul>
         <p>
           Each type of noise is available in two variants: <strong>5error</strong> (all five captions per image are noisy) and <strong>Mixed</strong> (noise is partially mixed).

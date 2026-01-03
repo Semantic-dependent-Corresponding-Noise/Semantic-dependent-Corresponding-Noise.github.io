@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Semantic-dependent Corresponding Noise</title>
+  <title>Semantics-dependent Corresponding Noise</title>
   
   <!-- Bulma CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
@@ -297,7 +297,7 @@
               <span style="color: #8B0000;">Semantic-dependent-Corresponding-Noise</span>
             </h1>
             <h2 class="subtitle hero-subtitle">
-              Introduce the first benchmark targeting semantic-dependent noisy correspondence to reveal the limitations of random-shuffling evaluations
+              Introduce the first benchmark targeting semantics-dependent noisy correspondence to reveal the limitations of random-shuffling evaluations
             </h2>
             
             <!-- New Logo Section -->
@@ -336,7 +336,7 @@
         </p>
         <figure class="image is-fullwidth" style="margin-top: 2rem;">
           <img src="assets/img/four_noise.png" alt="Noise Types" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-          <div class="img-caption-tag">Figure 1: Framework for synthesizing structured semantic-dependent noise in image-text pairs.</div>
+          <div class="img-caption-tag">Figure 1: Framework for synthesizing structured semantics-dependent noise in image-text pairs.</div>
         </figure>
       </div>
     </div>
@@ -606,7 +606,7 @@
         <h2>Conclusion</h2>
       </div>
       <div class="content">
-        We introduced a semantics-aware benchmark and generation framework for evaluating robustness in noisy image–text correspondence, moving beyond random shuffling to four systematic, semantic-dependent noise types. Through controlled LMM/LLM re-captioning and feature-space retrieval, we created reproducible perturbations with distinct linguistic and distributional signatures that expose complementary failure modes in cross-modal retrieval.
+        We introduced a semantics-aware benchmark and generation framework for evaluating robustness in noisy image–text correspondence, moving beyond random shuffling to four systematic, semantics-dependent noise types. Through controlled LMM/LLM re-captioning and feature-space retrieval, we created reproducible perturbations with distinct linguistic and distributional signatures that expose complementary failure modes in cross-modal retrieval.
         Our re-evaluation of representative baselines and NCL methods reveals several key findings: Robustness under random shuffling overestimates true resilience. NCL strategies tuned for unstructured corruption can underperform simple fine-tuning when residual semantic cues persist, especially at high noise ratios, highlighting the need for denoising that preserves weak but useful alignment signals rather than suppressing them.
         Together, these results argue for semantics-aware evaluation as a necessary complement to existing benchmarks. Our benchmark provides a practical, extensible testbed to study structured correspondence noise, enabling more faithful measurement and targeted algorithmic advances.  We envision this benchmark could facilitate a shift toward methods and metrics that match the semantic reality of noisy web-scale supervision.
       </div>
@@ -619,7 +619,7 @@
       <div class="columns">
         <div class="column is-half">
           <h3 style="color: #ff8b8b; font-size: 1.4rem; margin-bottom: 1rem;">Semantic-dependent-Corresponding-Noise</h3>
-          <p style="opacity: 0.8;">Introduce the first benchmark targeting semantic-dependent noisy correspondence to reveal the limitations of random-shuffling evaluations</p>
+          <p style="opacity: 0.8;">Introduce the first benchmark targeting semantics-dependent noisy correspondence to reveal the limitations of random-shuffling evaluations</p>
         </div>
         <div class="column is-half has-text-right-tablet">
           <h4 style="color: #ff8b8b; margin-bottom: 1rem;">Links</h4>
